@@ -17,14 +17,4 @@ environment.plugins.prepend(
     Popper: ['popper.js', 'default']
   })
 )
-/**
- * To use jQuery in views
- */
-environment.loaders.append('expose', {
-  test: require.resolve('jquery'),
-  use: [{
-    loader: 'expose-loader',
-    options: '$'
-  }]
-})
 module.exports = environment
